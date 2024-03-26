@@ -1,13 +1,9 @@
 const qrContainer = document.querySelector("#qr-code");
 const qrText = document.querySelector(".qr-text");
 
-qrText.addEventListener("input", handleQRText);
+const defaultUrl = "Te quiero mucho meme <3";
 
-const defaultUrl = " ";
-let colorLight = "#fff",
-    colorDark = "#000",
-    text = defaultUrl,
-    size = 300;
+qrText.addEventListener("input", handleQRText);
 
 function handleQRText(e) {
     const value = e.target.value;
@@ -21,14 +17,8 @@ function handleQRText(e) {
 async function generateQRCode() {
     qrContainer.innerHTML = "";
     new QRCode("qr-code", {
-        text,
-        height: size,
-        width: size,
-        colorLight,
-        colorDark,
+        text
     });
 }
-
-
 
 generateQRCode();
