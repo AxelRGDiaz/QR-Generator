@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/QR-icon.svg" type="image/icon type">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>QR GENERATOR</h1>
+    </header>
+
+    <section>
+        <input type="text" class="qr-text" placeholder="Enter text">
+        <div id="qr-code"></div>
+        <button id="download-btn" hidden></button>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="/Js/app.js"></script>
+</body>
+
+</html>
