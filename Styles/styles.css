@@ -68,7 +68,7 @@ h1 {
     }
 }
 #download-btn {
-    background-image:url('/public/download.png');
+    background-image:url('/images/download.png');
     background-repeat:no-repeat;
     height:60px;
     width:70px;
